@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>my-lights demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../my-lights.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic my-lights demo</h3>
+          <my-lights id="lights"></my-lights>
+          <button onclick="lights.green=!lights.green;">Toggle green</button>
+          <button onclick="lights.yellow=!lights.yellow;">Toggle yellow</button>
+          <button onclick="lights.red=!lights.red;">Toggle red</button>
+    </div>
+  </body>
+</html>
